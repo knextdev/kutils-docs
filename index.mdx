@@ -1,71 +1,50 @@
 ---
 title: Introduction
-description: "Welcome to the home of your new documentation"
+description: "An intro to KUtils"
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.png"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.png"
-  alt="Hero Dark"
-/>
+KUtils is a powerful utility module that streamlines
+common Roblox development tasks through intuitive, concise functions.
 
-## Setting up
+Here's how KUtils transforms verbose Roblox code into elegant solutions.
+Compare these two approaches for tweening an object:
 
-The first step to world-class documentation is setting up your editing environments.
+**Using KUtils**
 
-<CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
+```lua
+local k = require(game.ReplicatedStorage.Modules.KUtils)
+local info = k.tweenInfo(0.5, "Circular", "Out")
 
-## Make it yours
+k.tween(
+    {game.Workspace.Baseplate, info,
+        {Position = Vector3.new(0, 64, 0)}
+    }
+)
+```
+<Tip>
+    We like referencing the KUtils module as `k` in our examples.
+    You don't have to do this in your code, but it's nice for shortening things.
+</Tip>
 
-Update your docs to your brand and add valuable content for the best user conversion.
+**Traditional approach**
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+```lua
+local tweenService = game:GetService("TweenService")
+local info = TweenInfo.new(0.5, Enum.TweenStyle.Circular, Enum.TweenDirection.Out)
+
+local tween = tweenService:Create(game.Workspace.Baseplate, info,
+    {Position = Vector3.new(0, 64, 0)}
+)
+
+tween:Play()
+```
+
+Even though they do the same thing, you'll likely find that using KUtils makes it more readable.
+KUtils' tween function eliminates boilerplate code by:
+
+* Managing service references internally
+* Reducing the amount of required services
+* Handling tween creation and playback automatically
+
+The tween function is just one of KUtils' many great utilities.
+Check out more functions or take a look at the guides if you'd like to learn more.
