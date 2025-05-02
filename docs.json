@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "palm",
+  "theme": "willow",
   "name": "KUtils",
   "colors": {
     "primary": "#7835E2",
@@ -8,8 +8,8 @@
     "dark": "#171834"
   },
   "favicon": {
-    "light": "/favicon.svg",
-    "dark": "/favicon.svg"
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
   },
   "navigation": {
     "tabs": [
