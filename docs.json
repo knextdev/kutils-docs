@@ -46,6 +46,9 @@
     }
   },
   "redirects": {
-    "/": "/docs/getting-started/introduction"
+    {
+      "source": "/",
+      "destination": "/docs/get-started/introduction"
+    }
   }
 }
