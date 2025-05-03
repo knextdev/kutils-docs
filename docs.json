@@ -47,7 +47,7 @@
   },
   "redirects": [
     {
-      "source": "/",
+      "source": "index",
       "destination": "docs/get-started/introduction"
     }
   ]
