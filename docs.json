@@ -45,10 +45,10 @@
       "discord": "https://discord.com/invite/U8WuBrwYDR"
     }
   },
-  "redirects": {
+  "redirects": [
     {
       "source": "/",
-      "destination": "/docs/get-started/introduction"
+      "destination": "docs/get-started/introduction"
     }
-  }
+  ]
 }
