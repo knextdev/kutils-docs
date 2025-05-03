@@ -47,6 +47,10 @@
   },
   "redirects": [
     {
+      "source": "/",
+      "destination": "docs/get-started/introduction"
+    },
+    {
       "source": "index",
       "destination": "docs/get-started/introduction"
     }
