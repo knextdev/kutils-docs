@@ -20,13 +20,16 @@
             "group": "Get Started",
             "pages": [
               "index",
-              "documentation/get-started/installation"
+              "docs/get-started/installation"
             ]
           },
           {
             "group": "Functions",
             "pages": [
-              "documentation/functions/tween"
+              "docs/functions/tween",
+              "docs/functions/tween-info",
+              "docs/functions/create-tween",
+              "docs/functions/local-sound"
             ]
           }
         ]
@@ -41,5 +44,8 @@
     "socials": {
       "discord": "https://discord.com/invite/U8WuBrwYDR"
     }
+  },
+  "redirects": {
+    "/": "/docs/getting-started/introduction"
   }
 }

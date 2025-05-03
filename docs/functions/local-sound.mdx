@@ -3,7 +3,7 @@ title: "Local Sound"
 description: "Documentation for KUtils' local sound function"
 ---
 
-## Function
+### Function
 
 ```lua
 function module.localSound(
@@ -36,7 +36,7 @@ function module.localSound(
 end
 ```
 
-## Example
+### Example
 
 ```lua
 kutils.localSound("5801257793", 1, 0.5, 1, 0, game.Workspace)
@@ -44,13 +44,13 @@ kutils.localSound("5801257793", 1, 0.5, 1, 0, game.Workspace)
 
 ## Advantages
 
-* Automatically destroys the created sound after the provided duration.
+* Automatically destroys the created sound after the provided duration
 <Tip>
   Setting the duration to `-1` will make KUtils
-  remove the sound after it finishes playing.
+  remove the sound after it fully finishes playing.
 </Tip>
-* Function defaults are smart and optimal for things like sound effects.
-* Flexible and gives you full control over essential sound properties.
+* Function defaults are smart and optimal for things like sound effects
+* Flexible and gives you full control over essential sound properties
 
 <Tip>
   When used on the client, the `localSound` function only makes the sound locally.
