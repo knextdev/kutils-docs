@@ -1,54 +1,54 @@
 {
-    "$schema": "https://mintlify.com/docs.json",
-    "theme": "willow",
-    "name": "KUtils",
-    "colors": {
-        "primary": "#7835E2",
-        "light": "#F3F3FE",
-        "dark": "#171834"
-    },
-    "favicon": {
-        "light": "/logo/light.png",
-        "dark": "/logo/dark.png"
-    },
-    "navigation": {
-        "tabs": [
-            {
-                "tab": "Documentation",
-                "groups": [
-                    {
-                        "group": "Get Started",
-                        "pages": [
-                            "docs/get-started/introduction",
-                            "docs/get-started/installation"
-                        ]
-                    },
-                    {
-                        "group": "Functions",
-                        "pages": [
-                            "docs/functions/tween",
-                            "docs/functions/tween-info",
-                            "docs/functions/create-tween",
-                            "docs/functions/local-sound"
-                        ]
-                    }
-                ]
-            }
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "willow",
+  "name": "KUtils",
+  "colors": {
+    "primary": "#7835E2",
+    "light": "#F3F3FE",
+    "dark": "#171834"
+  },
+  "favicon": {
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "docs/get-started/introduction",
+              "docs/get-started/installation"
+            ]
+          },
+          {
+            "group": "Functions",
+            "pages": [
+              "docs/functions/tween",
+              "docs/functions/tween-info",
+              "docs/functions/create-tween",
+              "docs/functions/local-sound"
+            ]
+          }
         ]
-    },
-    "logo": {
-        "light": "/logo/light.png",
-        "dark": "/logo/dark.png"
-    },
-    "footer": {
-        "socials": {
-            "discord": "https://discord.com/invite/U8WuBrwYDR"
-        }
-    },
-    "redirects": [
-        {
-            "source": "/",
-            "destination": "docs/get-started/introduction"
-        }
+      }
     ]
+  },
+  "logo": {
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
+  },
+  "footer": {
+    "socials": {
+      "discord": "https://discord.com/invite/U8WuBrwYDR"
+    }
+  },
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "docs/get-started/introduction"
+    }
+  ]
 }
