@@ -19,7 +19,7 @@
                     {
                         "group": "Get Started",
                         "pages": [
-                            "index",
+                            "docs/get-started/introduction",
                             "docs/get-started/installation"
                         ]
                     },
