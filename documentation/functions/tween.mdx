@@ -1,5 +1,5 @@
 ---
-title: Tween
+title: "Tween"
 description: "Documentation for KUtils' tween function"
 ---
 
@@ -7,13 +7,13 @@ description: "Documentation for KUtils' tween function"
 
 ```lua
 function module.tween(...)
-    local data = {...}
-    local tweens = table.create(#data)
+  local data = {...}
+  local tweens = table.create(#data)
 
-    for i, entry in ipairs(data) do
-        tweens[i] = module.createTween(entry[1], entry[2], entry[3])
-        tweens[i]:Play()
-    end
+  for i, entry in ipairs(data) do
+    tweens[i] = module.createTween(entry[1], entry[2], entry[3])
+      tweens[i]:Play()
+  end
 end
 ```
 
@@ -21,17 +21,22 @@ end
 
 ```lua
 k.tween(
-    {workspace.Baseplate, k.tweenInfo(0.5, "Circular", "Out"),
-        {
-            Position = Vector3.new(0, 64, 0),
-            Color = Color3.fromRGB(255, 0, 0)
-        }
+  {workspace.Baseplate, k.tweenInfo(0.5, "Circular", "Out"),
+    {
+      Position = Vector3.new(0, 64, 0),
+      Color = Color3.fromRGB(255, 0, 0)
     }
+  },
+
+  {workspace.Part, k.tweenInfo(1, "Sine", "InOut"),
+    {Size = Vector3.new(30, 6, 16)}
+  }
 )
 ```
 
-## Advantages
+### Advantages
 
-* Can take multiple parts and properties at the same time.
-* Other utilities like `tweenInfo()` work with the `tween()` function to provide consistency.
-* Services like `TweenService` aren't needed.
+* Can take multiple parts and properties at the same time
+* Other utilities like `tweenInfo` work with the
+  `tween` function to provide consistency
+* No services are needed

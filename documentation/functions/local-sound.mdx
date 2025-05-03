@@ -1,0 +1,58 @@
+---
+title: "Local Sound"
+description: "Documentation for KUtils' local sound function"
+---
+
+## Function
+
+```lua
+function module.localSound(
+  id: string,
+  duration: number,
+  volume: number,
+  speed: number,
+  position: number,
+  parent: Instance
+)
+  local sound = Instance.new("Sound")
+  sound.RollOffMode = Enum.RollOffMode.Linear
+  sound.RollOffMinDistance = 60
+  sound.RollOffMaxDistance = 240
+  sound.SoundId = id
+  sound.Volume = volume
+  sound.PlaybackSpeed = speed
+  sound.TimePosition = position
+  sound.Parent = parent
+  sound.SoundGroup = game.SoundService.AllSounds
+  sound:Play()
+
+  if duration == -1 then
+    sound.Ended:Connect(function()
+      sound:Destroy()
+    end)
+  else
+    debris:AddItem(sound, duration)
+  end
+end
+```
+
+## Example
+
+```lua
+kutils.localSound("5801257793", 1, 0.5, 1, 0, game.Workspace)
+```
+
+## Advantages
+
+* Automatically destroys the created sound after the provided duration.
+<Tip>
+  Setting the duration to `-1` will make KUtils
+  remove the sound after it finishes playing.
+</Tip>
+* Function defaults are smart and optimal for things like sound effects.
+* Flexible and gives you full control over essential sound properties.
+
+<Tip>
+  When used on the client, the `localSound` function only makes the sound locally.
+  You can get around this by using a server script or setting up a remote event.
+</Tip>

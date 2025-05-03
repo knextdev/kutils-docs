@@ -1,0 +1,27 @@
+---
+title: "Tween Info"
+description: "Documentation for KUtils' tween info function"
+---
+
+### Function
+
+```lua
+function module.tweenInfo(duration: number, easing: string, direction: string)
+  return TweenInfo.new(
+    duration,
+    Enum.EasingStyle[easing],
+    Enum.EasingDirection[direction]
+  )
+end
+```
+
+### Example
+
+```lua
+local info = k.tweenInfo(0.5, "Sine", "Out")
+```
+
+### Advantages
+
+* Extremely short, simple, and readable
+* Doesn't require using `TweenInfo.new()`

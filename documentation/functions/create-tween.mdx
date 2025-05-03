@@ -1,0 +1,31 @@
+---
+title: "Create Tween"
+description: "Documentation for KUtils' create tween function"
+---
+
+### Function
+
+```lua
+function module.createTween(object, info: TweenInfo, properties)
+  return tweenService:Create(object, info, properties)
+end
+```
+
+### Example
+
+```lua
+local tween = k.createTween(
+  {workspace.Baseplate, k.tweenInfo(0.5, "Circular", "Out"),
+    {
+      Position = Vector3.new(0, 64, 0),
+      Color = Color3.fromRGB(255, 0, 0)
+    }
+  }
+)
+
+tween:Play()
+```
+
+<Note>
+  The `createTween` function is really only useful for creating a tween and playing it back later. It's not able to take multiple tweens at once. If you're looking for something like that, please use the `tween` function instead.
+</Note>
