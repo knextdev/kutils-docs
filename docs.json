@@ -26,10 +26,15 @@
           {
             "group": "Functions",
             "pages": [
-              "docs/functions/tween",
-              "docs/functions/tween-info",
-              "docs/functions/create-tween",
-              "docs/functions/local-sound"
+              {
+                "group": "Main Utilities",
+                "pages": [
+                  "docs/functions/main-utilities/tween",
+                  "docs/functions/main-utilities/tween-info",
+                  "docs/functions/main-utilities/create-tween",
+                  "docs/functions/main-utilities/local-sound"
+                ]
+              }
             ]
           }
         ]
