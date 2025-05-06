@@ -1,13 +1,11 @@
 ---
-title: Introduction
+title: "Introduction"
 description: "An intro to KUtils"
 ---
 
-KUtils is a powerful utility module that streamlines
-common Roblox development tasks through intuitive, concise functions.
+KUtils is a powerful utility module that makes tasks simpler and easier to use.
 
-Here's how KUtils transforms verbose Roblox code into elegant solutions.
-Compare these two approaches for tweening an object:
+Here's how KUtils transforms verbose Roblox code into elegant solutions. Compare these two approaches for tweening an object:
 
 ### Using KUtils
 
@@ -21,9 +19,9 @@ k.tween(
     }
 )
 ```
+
 <Tip>
-    We like referencing the KUtils module as `k` in our examples.
-    You don't have to do this in your code, but it's nice for shortening things.
+  We like referencing the KUtils module as `k` in our examples. You don't have to do this in your code, but it's nice for shortening things.
 </Tip>
 
 ### Traditional approach
@@ -39,12 +37,10 @@ local tween = tweenService:Create(game.Workspace.Baseplate, info,
 tween:Play()
 ```
 
-Even though they do the same thing, you'll likely find that using KUtils makes it more readable.
-KUtils' tween function eliminates boilerplate code by:
+Even though they do the same thing, you'll likely find that using KUtils makes it more readable. KUtils' `tween` function eliminates boilerplate code by:
 
-* Managing service references internally
-* Reducing the amount of required services
-* Handling tween creation and playback automatically
+- Managing service references internally
+- Reducing the amount of required services
+- Handling tween creation and playback automatically
 
-The tween function is just one of KUtils' many great utilities.
-Check out more functions or take a look at the guides if you'd like to learn more.
+The `tween` function is just one of KUtils' many great utilities. Check out more functions or take a look at the guides if you'd like to learn more.

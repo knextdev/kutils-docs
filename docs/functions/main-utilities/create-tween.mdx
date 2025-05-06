@@ -1,12 +1,16 @@
 ---
 title: "Create Tween"
-description: "Documentation for KUtils' create tween function"
+description: "Documentation for KUtils' `createTween` function"
 ---
 
 ### Function
 
 ```lua
-function module.createTween(object, info: TweenInfo, properties)
+function module.createTween(
+  object: Instance,
+  info: TweenInfo,
+  properties
+)
   return tweenService:Create(object, info, properties)
 end
 ```
@@ -27,5 +31,5 @@ tween:Play()
 ```
 
 <Note>
-  The `createTween` function is really only useful for creating a tween and playing it back later. It's not able to take multiple tweens at once. If you're looking for something like that, please use the `tween` function instead.
+  The `createTween` function can't make multiple tweens at once. If you're looking for something like that, please use the `tween` function instead.
 </Note>
